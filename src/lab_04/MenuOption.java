@@ -61,6 +61,7 @@ public class MenuOption {
         for (Integer i : list) {
             System.out.print("   " + i);
         }
+        System.out.println("all done");
     }
 
     private static int getMax(List<Integer> list, int option) {
