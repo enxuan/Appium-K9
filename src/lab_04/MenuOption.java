@@ -9,12 +9,12 @@ public class MenuOption {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         List<Integer> intArr = new ArrayList<>();
-        boolean b = true;
+        boolean isContinue = true;
 
         // Menu: 1: input number to array list, 2: print numbers, 3: get max number, 4: get min number
         //    5: get number's postion
 
-        while(b) {
+        while(isContinue) {
             System.out.println("Input your Option, 1: insert, 2: print, 3: get max, 4: get min, 5: get number index");
             int option = scanner.nextInt();
 
@@ -47,7 +47,7 @@ public class MenuOption {
                     break;
                 default:
                     System.out.println("the option is invalid, plz try again");
-                    b = false;
+                    isContinue = false;
                     break;
             }
         }
